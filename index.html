@@ -1,12 +1,14 @@
 <!DOCTYPE <html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>DylanH Profile</title>
     <link href="style.css" rel="stylesheet">
     <script type="text/javascript" src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
@@ -35,40 +37,62 @@
     </section>
 
     <!-- ABOUT SECTION -->
-    <section id="about">
-        <div class="container-fluid bg-dark bg-gradient h-100 p-xl-5">
-            <div class="row d-flex align-items-center h-100 justify-content-center">
-                <div class="col-lg-8">
-                    <div class="card" style="border-radius: 15px">
-                        <div class="card-body p-4">
-                            <div class="d-lg-flex text-black">
-                                <div class="flex-shrink-0 text-center">
-                                    <img src="assets\pictures\profilepic.jpg" alt="profile picture" class="img-fluid"
-                                        style="width: 180px; border-radius: 10px;" />
+    <div class="container-fluid bg-dark bg-gradient h-100 p-xl-5">
+        <div class="row d-flex align-items-center h-100 justify-content-center">
+            <div class="col-lg-9">
+                <div class="card" style="border-radius: 15px">
+                    <div class="card-body p-4">
+                        <div class="d-lg-flex text-black">
+                            <div class="flex-shrink-0 text-center">
+                                <img src="assets\pictures\profilepic.jpg" alt="profile picture" class="img-fluid"
+                                    style="width: 180px; border-radius: 10px;" />
+                            </div>
+                            <div class="col-sm-9 ms-3 justify-content-center text-lg-start text-center">
+                                <h5 class="mb-1">Dylan Houston</h5>
+                                <h6 class="mb-2 pb-2" style="color: rgb(58, 202, 58)">Amateur Coder</h6>
+                                <div class="d-flex rounded-3 p-3 mb-2" style="background-color: #efefef;">
+                                    <div>
+                                        <p class="small mb-1 about-card">
+                                            <span class="run-animation">"Expanding</span>
+                                            <span class="run-animation">my</span>
+                                            <span class="run-animation">knowledge</span>
+                                            <span class="run-animation">of</span>
+                                            <span class="run-animation">programming</span>
+                                            <span class="run-animation">and</span>
+                                            <span class="run-animation">technology</span>
+                                            <span class="run-animation">while</span>
+                                            <span class="run-animation">also</span>
+                                            <span class="run-animation">using</span>
+                                            <span class="run-animation">what</span> 
+                                            <span class="run-animation">I</span> 
+                                            <span class="run-animation">know</span>
+                                            <span class="run-animation">to</span>
+                                            <span class="run-animation">help</span>
+                                            <span class="run-animation">develop</span>
+                                            <span class="run-animation">programs</span>
+                                            <span class="run-animation">that</span>
+                                            <span class="run-animation">make</span>
+                                            <span class="run-animation">the</span>
+                                            <span class="run-animation">lives</span>
+                                            <span class="run-animation">of</span>
+                                            <span class="run-animation">businesses</span>
+                                            <span class="run-animation">and</span>
+                                            <span class="run-animation">people</span>
+                                            <span class="run-animation">easier</span>
+                                            <span class="run-animation">and</span>
+                                            <span class="run-animation">more</span>
+                                            <span class="run-animation">enjoyabe"</span>
+                                        </p>
+                                    </div>
                                 </div>
-                                <div class="col-sm-10 ms-3 justify-content-center text-lg-start text-center">
-                                    <h5 class="mb-1">Dylan Houston</h5>
-                                    <p class="mb-2 pb-2" style="color: var(--main-green)">Amateur Coder</p>
-                                    <div class="d-flex rounded-3 p-3 mb-2"
-                                        style="background-color: #efefef;">
-                                        <div>
-                                            <p class="small mb-1 about-card">
-                                                "Expanding my knowledge of computer programming and technology while
-                                                also using
-                                                what I know to help develop programs that make the lives of businesses
-                                                and
-                                                people easier and more enjoyable"
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex pt-1">
-                                        <button type="button" class="btn btn-outline-dark me-1 flex-grow-1" onclick="relocate_resume()">
-                                            Résumé
-                                        </button>
-                                        <button type="button" class="btn btn-dark flex-grow-1" onclick="relocate_email()">
-                                            Email Me
-                                        </button>
-                                    </div>
+                                <div class="d-flex pt-1">
+                                    <button type="button" class="btn btn-light-sm me-1 flex-grow-1"
+                                        onclick="relocate_resume()">
+                                        Résumé
+                                    </button>
+                                    <button type="button" class="btn btn-green flex-grow-1" onclick="relocate_email()">
+                                        Email Me
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -76,8 +100,7 @@
                 </div>
             </div>
         </div>
-    </section>
-
+    </div>
     <!-- PROJECT SECTION -->
     <section id="projects">
         <div class="container-fluid align-items-center text-center bg-dark bg-gradient">
@@ -88,7 +111,7 @@
             <div class="container-fluid">
                 <div class="row align-items-center gap-3 p-3">
                     <div class="col-sm">
-                        <div class="card bg-dark text-white projects">
+                        <div class="card bg-blue text-white projects">
                             <a class="card-links" href="https://codepen.io/oFakeee/pen/LYEjPya" target="_blank">
                             <div class="card-body">
                                 <h5 class="card-title"><span class="code">&lt;</span>Calculator<span
@@ -99,7 +122,7 @@
                         </div></a>
                     </div>
                     <div class="col-sm">
-                        <div class="card bg-dark text-white projects">
+                        <div class="card bg-blue text-white projects">
                             <a class="card-links" href="https://github.com/DylanMH/MixCalculatorApp" target="_blank">
                                 <div class="card-body">
                                     <h5 class="card-title"><span class="code">&lt;</span>Construction App<span
@@ -110,7 +133,7 @@
                         </div></a>
                     </div>
                     <div class="col-sm">
-                        <div class="card bg-dark text-white projects">
+                        <div class="card bg-blue text-white projects">
                             <a class="card-links" href="http://northstar-pm.com" target="_blank">
                             <div class="card-body">
                                 <h5 class="card-title"><span class="code">&lt;</span>Northstar Landing Page<span
@@ -126,7 +149,7 @@
             <div class="container-fluid d-none d-md-block d-sm-none">
                 <div class="row align-items-center gap-3 p-3">
                     <div class="col-sm">
-                        <div class="card bg-dark text-white projects">
+                        <div class="card bg-blue text-white projects">
                             <a class="card-links" href="https://public.tableau.com/app/profile/dylan.houston/viz/TableauProject_16597488791470/Story1" target="_blank">
                             <div class="card-body">
                                 <h5 class="card-title"><span class="code">&lt;</span>Tableau Project<span
@@ -137,7 +160,7 @@
                         </div></a>
                     </div>
                     <div class="col-sm">
-                        <div class="card bg-dark text-white projects">
+                        <div class="card bg-blue text-white projects">
                             <a class="card-links" href="https://github.com/DylanMH/AppleAppDataAnalysis/blob/main/pythoncode.ipynb" target="_blank">
                                 <div class="card-body">
                                 <h5 class="card-title"><span class="code">&lt;</span>Data Analytics Project<span
@@ -148,7 +171,7 @@
                         </div></a>
                     </div>
                     <div class="col-sm">
-                        <div class="card bg-dark text-white projects">
+                        <div class="card bg-blue text-white projects">
                             <a class="card-links" href="https://codepen.io/oFakeee/pen/JjjdVqJ" target="_blank">
                             <div class="card-body">
                                 <h5 class="card-title"><span class="code">&lt;</span>Trender Idea<span
@@ -174,17 +197,17 @@
             <div class="row align-items-center contact-links justify-content-center">
                 <div class="col-sm-2 contact-details">
                     <a id="profile-link" href="https://github.com/DylanMH" target="_blank">
-                        <i class="fab fa-github"></i>Github</a>
+                        <i class="fab fa-github" style="margin: 6px"></i>Github</a>
                     </a>
                 </div>
                 <div class="col-sm-2 contact-details">
                     <a id="linkedin-link" href="https://www.linkedin.com/in/dylan-houston-076478170/" target="_blank">
-                        <i class="fab fa-linkedin"></i>LinkedIn</a>
+                        <i class="fab fa-linkedin" style="margin: 6px;"></i>LinkedIn</a>
                     </a>
                 </div>
                 <div class="col-sm-2 contact-details">
                     <a id="tableau" href="mailto:dylan98909@gmail.com" target="_blank">
-                        <i class="fas fa-envelope"></i>Email</a>
+                        <i class="fas fa-envelope" style="margin: 6px;"></i>Email</a>
                     </a>
                 </div>
             </div>
